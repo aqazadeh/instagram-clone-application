@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    include:
+      - db
+      - mail
+      - swagger
+      - cloudinary
+      - custom
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+
+  main:
+    allow-circular-references: false
